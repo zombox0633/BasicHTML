@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="test">
+    <meta name="author" content="chayathorn">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+        
+        body{
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(#f19066,#f3a683,#f5cd79,#f7d794);
+            
+        }
+        span{
+            font-size: 30px;
+            font-family: 'Fascinate Inline', cursive;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #C4C2C9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        li{
+            float: left;
+        }
+        li a {
+            color: #1A1F24;
+            display:block;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 16px;
+            text-align: center;
+            text-decoration: none;    
+        }
+        li a:hover,
+        li a:focus{
+            color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        form{
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input{
+            border: none;
+            height: 50px;
+            width: 250px;
+            margin: 10px 0;
+            padding: 0 10px;
+            font-size: 1rem;
+            outline: none;
+            text-align: center;
+            border-radius: 5px;
+            transition: .5s;
+            cursor: pointer;
+        }
+        input:focus::placeholder,
+        input:hover::placeholder{
+            color: transparent;
+        }
+        .textbox{
+            color: #f19066;
+            background: rgba(255, 255, 255, 02);
+            border: 1px solid rgba(255, 255, 255, 02);
+        }
+        .textbox::placeholder{
+            color: #f19066;
+        }
+        .textbox:hover, 
+        .textbox:focus{
+            background: #fff;
+            width: 350px;
+            color: #f19066;
+        }
+        .btn-submit,
+        .btn-reset {
+            background: #fff;
+            color: #f19066;
+        }
+        .btn-submit:hover,
+        .btn-reset:hover{
+            background: #f19066;
+            color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 02);
+        }
+    </style>
+</head>
+<body>
+    <span >Bease</span>
+    <ul>
+        <li><a href="https://www.google.com" target="_blank">google</a></li>
+        <li><a href="page2.html">page2</a></li>
+        <li><a href="page3.html">page3</a></li>
+        <li><a href="test1/test01.html">test01</a></li>
+    </ul>
+    <br>
+    <form align="left" >
+        <div>
+            <!--<strong><label for="First_Name">First Name</label></strong>-->
+            <input class="textbox" type="text" name="Fname"  placeholder="First Name">
+        </div>
+        <div>
+            <!-- <strong><label for="Lest_Name">Lest Name</label></strong> -->
+            <input class="textbox" type="text" name="Lname" placeholder="Lest Name">
+        </div>
+        <div>
+            <!-- <strong><label for="Email">Email</label></strong> -->
+            <input class="textbox" type="email" name="Email" placeholder="Email">
+        </div>
+        <div>
+             <!--<strong><label for="Password">Password</label></strong> -->
+            <input class="textbox" type="password" name="Password" placeholder="Password">
+        </div>
+        <div>
+            <!--<strong><label for="Date">Date</label></strong> -->
+            <input class="textbox" type="date" name="Datetime" placeholder="Date">
+        </div>
+        <div>
+            <!--<strong><label for="Telephone_Number">Telephone Number</label></strong> -->
+            <input class="textbox" type="tel" name="Tel" placeholder="Telephone Number">
+        </div>
+        <!--<div>
+            <strong><label for="Favorite_Color">Favorite Color</label></strong>
+            <input class="textbox" type="color" name="Fcolor">
+        </div>
+        <div>
+            <strong><label for="Favorite_Number">Favorite Number</label></strong>
+            <input class="textbox" type="range" name="Favorite_Number" value="1">
+        </div>
+        <div>
+            <strong><label for="Education">Education</label></strong>
+            <select class="textbox" name="Edu" id="" value="Bachelor_Degree">
+                <option value="Bachelor_Degree">Bachelor Degree</option>
+                <option value="Masters_Degree">Masters Degree</option>
+                <option value="Doctoral_Degree">Doctoral Degree</option>
+            </select>
+        </div>
+        <div>
+            <strong><label for="Gender">Gender</label></strong>
+            <input type="radio" name="Gender" value="Man">Man
+            <input type="radio" name="Gender" value="Female">Female
+        </div> -->
+        <div>
+            <input class="btn-submit" type="submit" value="Save">
+            <input class="btn-reset" type="reset" name="" id="" value="Reset">
+        </div>
+    </form>   
+</body>
+</html>

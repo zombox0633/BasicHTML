@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+        }
+        tr,td,th{
+            border: 1px solid rgb(0, 0, 0);
+            padding: 8px;
+        }
+        tr:nth-child(even){
+            background-color: #ddd;
+        }
+        a:link, a:visited {
+            background-color: rebeccapurple;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+        }
+        a:hover, a:active {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>page3</h1>
+    <table>
+        <thead>
+            <th>product image</th>
+            <th>product name</th>
+            <th>price</th>
+            <th>order buy</th>
+        </thead>
+        <tbody align="center">
+            <tr>
+                <td><img src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg" alt="daisy" width="200px" height="200px"></td> 
+                <td>daisy</td>
+                <td bgcolor="skyblue">5$</td>
+                <td><a href="index.html">buy</a></td>
+            </tr>
+            <tr>
+                <td><img src="https://www.anniesannuals.com/signs/p%20-%20r/images/papaver_greek_04.jpg" alt="poppy"width="200px"height="200px"></td>
+                <td>poppy</td>
+                <td>10$</td>
+                <td><a href="index.html">buy</a></td>
+            </tr>
+            <tfoot align="right">
+                <tr>
+                    <td colspan="5">price</td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
+</body>
+</html>
